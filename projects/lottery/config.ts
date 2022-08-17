@@ -1,7 +1,8 @@
 export default {
   CakeToken: {
     mainnet: "0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82",
-    testnet: "0xa35062141fa33bca92ce69fed37d0e8908868aae",
+    // testnet: "0xa35062141fa33bca92ce69fed37d0e8908868aae",
+    testnet: "",
   },
   LinkToken: {
     mainnet: "0x404460C6A5EdE2D891e8297795264fDe62ADBB75",

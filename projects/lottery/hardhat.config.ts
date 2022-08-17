@@ -19,6 +19,12 @@ const bscMainnet: NetworkUserConfig = {
   accounts: [process.env.KEY_MAINNET!],
 };
 
+const polygonTestnet: NetworkUserConfig = {
+  url: "https://polygon-mumbai.g.alchemy.com/v2/nHKUKNlUpaQlw8375-jGCKx9FEpsW5RM",
+  chainId: 80001,
+  accounts: ["690791963a10f5940e6bb49476e362eb3b837017420dcfb34f9fe4d3b354853e"],
+};
+
 const config: HardhatUserConfig = {
   defaultNetwork: "hardhat",
   networks: {
@@ -28,6 +34,7 @@ const config: HardhatUserConfig = {
     },
     // testnet: bscTestnet,
     // mainnet: bscMainnet,
+    testnet: polygonTestnet,
   },
   solidity: {
     version: "0.8.4",

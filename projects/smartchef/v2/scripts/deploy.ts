@@ -22,7 +22,7 @@ async function main() {
   let rewardTokenAddress: string;
 
   if (currentNetwork == "testnet") {
-    const MockBEP20 = await ethers.getContractFactory("MockBEP20");
+    const MockBEP20 = await ethers.getContractFactory("MockERC20");
     const rewardToken = await MockBEP20.deploy("Pool Token 1", "PT1", parseEther("800000"));
     rewardTokenAddress = rewardToken.address;
     console.log("RewardToken deployed to:", rewardTokenAddress);
